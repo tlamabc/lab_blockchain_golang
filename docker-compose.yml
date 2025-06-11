@@ -1,0 +1,59 @@
+version: "3.9"
+services:
+  node1:
+    build: .
+    container_name: node1
+    environment:
+      NODE_ID: node1
+      ROLE: leader
+      PORT: "2201"
+      PEERS: "http://node2:2202,http://node3:2203"
+    ports:
+      - "2201:2201"
+    volumes:
+      - node1_data:/app/data
+    networks:
+      - chainnet
+
+  node2:
+    build: .
+    container_name: node2
+    depends_on:
+      - node1
+    environment:
+      NODE_ID: node2
+      ROLE: follower
+      PORT: "2202"
+      PEERS: "http://node1:2201"
+    ports:
+      - "2202:2202"
+    volumes:
+      - node2_data:/app/data
+    networks:
+      - chainnet
+
+  node3:
+    build: .
+    container_name: node3
+    depends_on:
+      - node1
+    environment:
+      NODE_ID: node3
+      ROLE: follower
+      PORT: "2203"
+      PEERS: "http://node1:2201"
+    ports:
+      - "2203:2203"
+    volumes:
+      - node3_data:/app/data
+    networks:
+      - chainnet
+
+volumes:
+  node1_data:
+  node2_data:
+  node3_data:
+
+networks:
+  chainnet:
+    driver: bridge
