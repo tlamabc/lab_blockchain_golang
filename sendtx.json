@@ -1,7 +1,1 @@
-{
-  "sender": "5a997720a0962c6ad9982a0951f7443fe530f860c2382aa947d84321f2e2cc7b",
-  "receiver": "bob-address-xyz",
-  "amount": 10.5,
-  "timestamp": 1749653488,
-  "signature": "OchLVZAeLx0eUL+osMROklxOYrc4VaMtG2+zUIubEqUFN7D/aL5tqfJHmXFu6dokCrtthk2QoKGHH5itgADWxw=="
-}
+{"sender":"c0c51775e6cc673e6c14574a11cb027ac81ab4fe8e50dfc533e7af80a538c824","receiver":"bob-address-xyz","amount":10,"timestamp":1749701888,"signature":"FLuwzDAb6hHLu/8mKYdw1C+XxhRbLIK+0VYkwS0rzRLq4/EHG98hJ/VCHk5wuLBAls7OWxa+vKlqgyrpPurj3A=="}
