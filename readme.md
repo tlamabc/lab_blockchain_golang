@@ -137,8 +137,3 @@ curl -X POST http://localhost:2202/vote \
 * 💻 Github: [tlamabc](https://github.com/tlamabc)
 * ✉️ Email: [dangthanhlam1312@gmail.com](mailto:dangthanhlam1312@gmail.com)
 
----
-
-![Sơ đồ hệ thống](./des.png)
-
----
