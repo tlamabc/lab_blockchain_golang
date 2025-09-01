@@ -1,5 +1,4 @@
-# 🧪 BÀI TEST TUYỂN DỤNG GOLANG DEVELOPER - ĐẶNG THANH LÂM
-
+# 🧪 LAB_BLOCKCHAIN USING GOLANG
 ## ⚙️ Kiến trúc hệ thống
 
 Hệ thống gồm **3 node blockchain** chạy bằng Docker Compose, mô phỏng một mạng phân tán nhỏ với leader-follower và cơ chế đồng thuận đơn giản.
